@@ -1,0 +1,26 @@
+---
+title: "Critical Family and Kinship Studies through LLM, Text Embedding and Social Network Analysis"
+author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
+format: beamer
+---
+## Learning Outcomes
+
+## Notebook 1 
+### Classifying literature/texts into theories that best align with them 
+
+[Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
+
+- 
+
+
+## Notebook 2
+
+
+## Notebook 3
+
+
+## Notebook 4
+
+
+## Reference
+
