@@ -6,20 +6,20 @@ format: beamer
 ## Learning Outcomes
 
 ## Notebook 1 
-### Classifying literature/texts into theories that best align with them 
+### Classification through Naive Bayes and BERT
 
 [Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
-
 - 
 
-
 ## Notebook 2
+### Word Embeddings
 
 
 ## Notebook 3
-
+### Audio Analysis
 
 ## Notebook 4
+### Social Network Analysis
 
 
 ## Reference
