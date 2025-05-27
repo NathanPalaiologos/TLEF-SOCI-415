@@ -12,14 +12,15 @@ format: beamer
 - 
 
 ## Notebook 2
-### Word Embeddings
+### Word Embeddings and Cosine Similarity
 
 
 ## Notebook 3
 ### Audio Analysis
 
+
 ## Notebook 4
-### Social Network Analysis
+### Social Network Analysis of Family Law Cases
 
 
 ## Reference
