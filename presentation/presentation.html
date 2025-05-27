@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-e0a95c5bb6026cadde288d6ca1457c36.css">
   <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -45,6 +45,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -141,30 +142,80 @@ Kaiyan Zhang, Yash Mali, Irene Berezin
 </section>
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
+<p><strong>Sociology has changed</strong>. It’s no longer just theory and text. It’s an <strong>ever-evolving fusion of data, algorithms, and human stories</strong>.</p>
+<p><strong>Sociology</strong> – and its power to map social patterns – drives new insights. Survey data, social media, census records: features selected, models trained, findings validated. Contextualization. Interpretation. Critical reflection.</p>
+<p><strong>Sociology has changed</strong>. The era of narrative alone has given way to data-grounded discovery In the quest to understand inequality, networks, and collective behavior. And those who harness both numbers and nuance, redefine how we see society. <strong>Sociology has changed</strong>. When social phenomena are both seen and measured, the discipline is transformed.</p>
 </section>
-<section id="notebook-1-classification-through-naive-bayes-and-bert" class="slide level2">
-<h2>Notebook 1: Classification through Naive Bayes and BERT</h2>
-<p>With this notebook we hope to show how can we apply text classification and LLM in sociological research. <em><a href="https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb">Demo Notebook</a></em></p>
-<p>Learning Outcomes:</p>
+<section id="notebook-1-classification-through-naive-bayes-and-bert-demo" class="slide level2">
+<h2>Notebook 1: Classification through Naive Bayes and BERT <a href="https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb">Demo</a></h2>
+<p><strong>Learning Outcomes</strong>: Through this class, students will</p>
 <ul>
-<li></li>
-<li></li>
+<li>understand the how we can text data are vectorized for qualitative analysis in Computers.</li>
+<li>understand what is a classifier, how does it work, and how it can be applied to sociological studies.</li>
+<li>classify texts in a classical approach that requires training data.</li>
+<li>apply a theory they’ve learnt in the course to let a LLM label texts for them, without fitting training data.</li>
+<li>critically evaluate the quality of classification, and analyze the pros and cons of using LLM in sociological studies.</li>
 </ul>
 </section>
 <section id="class-structure" class="slide level2">
 <h2>Class Structure</h2>
+<h3 id="part-a-intro-to-vectorization-and-classification">Part A: Intro to Vectorization and Classification</h3>
 <ul>
-<li>Part 1: A short introduction to key concepts of classification with visual aids.</li>
-<li>Part 2: An introduction to zero-shot classification with LLMs.</li>
-<li></li>
+<li>In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.</li>
+<li>We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of <strong>train-test split</strong>, which helps us evaluate how well our classifier generalizes to new, unseen data.</li>
+<li>Lastly, we cover how do we evaluate the quality of prediction using <strong>accuracy</strong> and how we can visualize the result using a <strong>confusion matrix</strong>. This provides students with a basic insight of machine learning.</li>
 </ul>
 </section>
-<section id="results" class="slide level2">
-<h2>Results</h2>
+<section class="slide level2">
+
+<h3 id="part-b-intro-to-zero-shot-classification-with-llm">Part B: Intro to Zero-shot Classification with LLM</h3>
+<ul>
+<li>In this part, we will use the same dataset as the previous part and a <strong>pre-trained LLM</strong> to perform classification.</li>
+<li>We will provide a prompt template let students apply knowledge to generate their own prompts and make classifications.</li>
+<li>We will also show that, provided with a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.</li>
+<li>Lastly, we will evaluate the quality of predictions, explain the importance of <strong>prompting</strong> in <strong>zero-shot classification</strong> and discuss the pros and cons of using pre-trained LLM.</li>
+</ul>
+</section>
+<section id="key-features-and-results" class="slide level2">
+<h2>Key Features and Results</h2>
+<!---
+For this part we may want to include images from our demo notebook and the results from the AI for humanists' notebooks
+--->
+<ul>
+<li><strong>Visual presentations of concepts and outcomes</strong></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img data-src="image/pca_example.png"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="image/classification_visualization_example.png"></p>
+</div><div class="column" style="width:30%;">
+<p><img data-src="image/cm_example.png" class="absolute" style="height: 230px; "></p>
+</div></div>
+<ul>
+<li><strong>Interactive Class Activity</strong></li>
+</ul>
+<pre><code>Questsion: What theory best align with the text below? 
+Text: ...
+Choices: Social Exchange or Symbolic Interaction or Feminism
+Answer: </code></pre>
+<div style="font-size: 80%;">
+<p>Students get to apply their knowledge to design and try out their own prompt based on the given template.</p>
+</div>
+<ul>
+<li><strong>Connection to Academic Reseach</strong></li>
+</ul>
+<div style="font-size: 80%;">
+<p>A number of sociology papers employed text classification as their key methodology, for example:</p>
+<p>Blodgett, S. L., &amp; Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. https://arxiv.org/abs/1608.08868</p>
+</div>
 </section>
 <section id="notebook-2-word-embeddings-and-cosine-similarity" class="slide level2">
 <h2>Notebook 2: Word Embeddings and Cosine Similarity</h2>
-<p>With this notebook we hope to show how</p>
+<p><strong>Learning Outcomes</strong>: Through this class, students will</p>
+<ul>
+<li>understand what is word embeddings</li>
+</ul>
 </section>
 <section id="notebook-3-audio-analysis" class="slide level2">
 <h2>Notebook 3: Audio Analysis</h2>

@@ -3,31 +3,93 @@ title: "SOCI 415"
 subtitle: "Critical Family and Kinship Studies through LLM, Text Embedding and Social Network Analysis"
 author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
 format: revealjs
+scrollable: true
+fontsize: 230%
 ---
 ## Introduction
 
+**Sociology has changed**. It’s no longer just theory and text. It’s an **ever-evolving fusion of data, algorithms, and human stories**. 
 
-## Notebook 1: Classification through Naive Bayes and BERT
- 
- [Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
+**Sociology** -- and its power to map social patterns -- drives new insights. Survey data, social media, census records: features selected, models trained, findings validated. Contextualization. Interpretation. Critical reflection. 
 
-**Learning Outcomes**:
+**Sociology has changed**. The era of narrative alone has given way to data-grounded discovery In the quest to understand inequality, networks, and collective behavior. And those who harness both numbers and nuance, redefine how we see society. **Sociology has changed**. When social phenomena are both seen and measured, the discipline is transformed.
 
-- Students will understand how text data are analyzed through 
-- 
+
+
+## Notebook 1: Classification through Naive Bayes and BERT [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
+
+**Learning Outcomes**: Through this class, students will
+
+- understand the how we can text data are vectorized for qualitative analysis in Computers.
+- understand what is a classifier, how does it work, and how it can be applied to sociological studies.
+- classify texts in a classical approach that requires training data.
+- apply a theory they've learnt in the course to let a LLM label texts for them, without fitting training data.
+- critically evaluate the quality of classification, and analyze the pros and cons of using LLM in sociological studies.
 
 ## Class Structure
 
-- Part 1: A short introduction to key concepts of classification with visual aids.
-- Part 2: An introduction to zero-shot classification with LLMs.
-- 
+### Part A: Intro to Vectorization and Classification
 
-## Results
+- In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.
+- We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of **train-test split**, which helps us evaluate how well our classifier generalizes to new, unseen data.
+- Lastly, we cover how do we evaluate the quality of prediction using **accuracy** and how we can visualize the result using a **confusion matrix**. This provides students with a basic insight of machine learning.
 
+---
+
+### Part B: Intro to Zero-shot Classification with LLM
+
+- In this part, we will use the same dataset as the previous part and a **pre-trained LLM** to perform classification. 
+- We will provide a prompt template let students apply knowledge to generate their own prompts and make classifications.
+- We will also show that, provided with a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.
+- Lastly, we will evaluate the quality of predictions, explain the importance of **prompting** in **zero-shot classification** and discuss the pros and cons of using pre-trained LLM.
+
+## Key Features and Results
+<!---
+For this part we may want to include images from our demo notebook and the results from the AI for humanists' notebooks
+--->
+- **Visual presentations of concepts and outcomes**      
+
+:::{.columns}
+::: {.column width="30%"}
+![](image/pca_example.png)
+:::
+
+::: {.column width="40%"}
+![](image/classification_visualization_example.png)
+:::
+
+::: {.column width="30%"}
+![](image/cm_example.png){.absolute height="230"}
+:::
+
+:::
+
+- **Interactive Class Activity**
+
+```
+Questsion: What theory best align with the text below? 
+Text: ...
+Choices: Social Exchange or Symbolic Interaction or Feminism
+Answer: 
+```
+<div style="font-size: 80%;">
+Students get to apply their knowledge to design and try out their own prompt based on the given template.
+</div>
+
+- **Connection to Academic Reseach**
+
+<div style="font-size: 80%;">
+A number of sociology papers employed text classification as their key methodology, for example:
+
+Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. https://arxiv.org/abs/1608.08868
+</div>
 
 
 ## Notebook 2: Word Embeddings and Cosine Similarity
-With this notebook we hope to show how 
+
+**Learning Outcomes**: Through this class, students will
+
+- understand what is word embeddings 
 
 ## Notebook 3: Audio Analysis
 
