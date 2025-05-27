@@ -1,16 +1,29 @@
 ---
-title: "Critical Family and Kinship Studies through LLM, Text Embedding and Social Network Analysis"
+title: "SOCI 415"
+subtitle: "Critical Family and Kinship Studies through LLM, Text Embedding and Social Network Analysis"
 author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
-format: beamer
+format: revealjs
 ---
-## Learning Outcomes
+## Introduction
+
 
 ## Notebook 1: Classification through Naive Bayes and BERT
-With this notebook we hope to show how can we apply text classification and LLM in sociological research. **[Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)**
+ 
+ [Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
 
-Key topics:
+**Learning Outcomes**:
+
+- Students will understand how text data are analyzed through 
+- 
+
+## Class Structure
+
 - Part 1: A short introduction to key concepts of classification with visual aids.
 - Part 2: An introduction to zero-shot classification with LLMs.
+- 
+
+## Results
+
 
 
 ## Notebook 2: Word Embeddings and Cosine Similarity
