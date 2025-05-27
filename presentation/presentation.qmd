@@ -5,22 +5,21 @@ format: beamer
 ---
 ## Learning Outcomes
 
-## Notebook 1 
-### Classification through Naive Bayes and BERT
+## Notebook 1: Classification through Naive Bayes and BERT
+With this notebook we hope to show how can we apply text classification and LLM in sociological research. **[Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)**
 
-[Demo Notebook](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
-- 
-
-## Notebook 2
-### Word Embeddings and Cosine Similarity
+Key topics:
+- Part 1: A short introduction to key concepts of classification with visual aids.
+- Part 2: An introduction to zero-shot classification with LLMs.
 
 
-## Notebook 3
-### Audio Analysis
+## Notebook 2: Word Embeddings and Cosine Similarity
+With this notebook we hope to show how 
+
+## Notebook 3: Audio Analysis
 
 
-## Notebook 4
-### Social Network Analysis of Family Law Cases
+## Notebook 4: Social Network Analysis of Family Law Cases
 
 
 ## Reference
