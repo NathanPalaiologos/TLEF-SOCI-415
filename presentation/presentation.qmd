@@ -4,7 +4,7 @@ subtitle: "Critical Family and Kinship Studies through LLM, Text Embedding and S
 author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
 format: revealjs
 scrollable: true
-fontsize: 230%
+fontsize: 220%
 ---
 ## Introduction
 
@@ -16,7 +16,7 @@ fontsize: 230%
 
 
 
-## Notebook 1: Classification through Naive Bayes and BERT [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
+## Notebook 1: Text Classification and Zero-shot Classification [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
 
 **Learning Outcomes**: Through this class, students will
 
@@ -81,7 +81,7 @@ Students get to apply their knowledge to design and try out their own prompt bas
 <div style="font-size: 80%;">
 A number of sociology papers employed text classification as their key methodology, for example:
 
-Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. https://arxiv.org/abs/1608.08868
+Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. <https://arxiv.org/abs/1608.08868>
 </div>
 
 
@@ -89,7 +89,20 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 **Learning Outcomes**: Through this class, students will
 
-- understand what is word embeddings 
+- explore theories interactively using social media data based on the methodology in Nelson (2021)
+- understand the concept of word embeddings and cosine similarity of words.
+- understand how topics and keywords can be extracted from texts by programs and algorithms.
+- apply knowledge in conflict theory and feminist theory to name categories that reflect intersectionality within family.
+- interpret the analysis result and discuss its potential bias.
+
+## Class Structure
+
+- We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
+- 
+
+## Key Features and Results
+
+
 
 ## Notebook 3: Audio Analysis
 
@@ -98,4 +111,5 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 
 ## Reference
-
+- Coleman, C., Lyon, S., & Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <https://datascience.quantecon.org/>
+- Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South. Poetics, 88, 101539. <https://doi.org/10.1016/j.poetic.2021.101539> 
