@@ -89,7 +89,7 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 **Learning Outcomes**: Through this class, students will
 
-- explore theories interactively using social media data based on the methodology in Nelson (2021)
+- explore theories interactively using social media data as an example based on the methodology in Nelson (2021)
 - understand the concept of word embeddings and cosine similarity of words.
 - understand how topics and keywords can be extracted from texts by programs and algorithms.
 - apply knowledge in conflict theory and feminist theory to name categories that reflect intersectionality within family.
@@ -98,9 +98,13 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 ## Class Structure
 
 - We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
-- 
+- Following the basic data exploration, we will introduce the concept of word embedding by training **Word2Vec embeddings** for different subgroups using `gensim` python library. Students can play around in this part with keywords related to different topics.
+- We then will introduce the concept of **cosine similarity**, and calculate the cosine similarity between each keyword (e.g. "care", "power", "labor", "authority", "patriarchy") and the group vectors we create in this form ("female" + "mother" + "18 - 30"). 
+- The results such as distribution of words with be displayed through a PCA 2D scatter plot and the distribution of cosine similarity and be shown with a bar plot.
+- Finally, we will engage in a critical discussion of the findings generated through word embedding techniques, focusing on how these results align with established theories of family and considering potential sources of bias in the analysis.
 
 ## Key Features and Results
+
 
 
 
