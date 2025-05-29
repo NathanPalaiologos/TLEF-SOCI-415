@@ -18,9 +18,11 @@ fontsize: 220%
 
 ## Notebook 1: Text Classification and Zero-shot Classification [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
 
+<div style="font-size: 120%;">
 **Learning Outcomes**: Through this class, students will
+</div>
 
-- understand the how we can text data are vectorized for qualitative analysis in Computers.
+- understand the how we can text data are vectorized for qualitative analysis with programs.
 - understand what is a classifier, how does it work, and how it can be applied to sociological studies.
 - classify texts in a classical approach that requires training data.
 - apply a theory they've learnt in the course to let a LLM label texts for them, without fitting training data.
@@ -47,7 +49,7 @@ fontsize: 220%
 <!---
 For this part we may want to include images from our demo notebook and the results from the AI for humanists' notebooks
 --->
-- **Visual presentations of concepts and outcomes**      
+- **Visual Presentations of Concepts, Output and Results**      
 
 :::{.columns}
 ::: {.column width="30%"}
@@ -87,7 +89,9 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 ## Notebook 2: Word Embeddings and Cosine Similarity
 
+<div style="font-size: 120%;">
 **Learning Outcomes**: Through this class, students will
+</div>
 
 - explore theories interactively using social media data as an example based on the methodology in Nelson (2021)
 - understand the concept of word embeddings and cosine similarity of words.
@@ -98,22 +102,67 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 ## Class Structure
 
 - We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
-- Following the basic data exploration, we will introduce the concept of word embedding by training **Word2Vec embeddings** for different subgroups using `gensim` python library. Students can play around in this part with keywords related to different topics.
-- We then will introduce the concept of **cosine similarity**, and calculate the cosine similarity between each keyword (e.g. "care", "power", "labor", "authority", "patriarchy") and the group vectors we create in this form ("female" + "mother" + "18 - 30"). 
-- The results such as distribution of words with be displayed through a PCA 2D scatter plot and the distribution of cosine similarity and be shown with a bar plot.
-- Finally, we will engage in a critical discussion of the findings generated through word embedding techniques, focusing on how these results align with established theories of family and considering potential sources of bias in the analysis.
+- Following the basic data exploration, we will introduce the concept of word embedding by training **Word2Vec embeddings** for different subgroups using `gensim` python library. Students can play around with keywords related to different theories in this part.
+- We then will introduce the concept of **cosine similarity**, and calculate the cosine similarity between each keyword (e.g. "care", "power", "labor", "authority", "patriarchy") and the group vectors we create in this form ("female" + "mother" + "20 - 29"). 
+- The results such as distribution of words with be displayed through a **PCA 2D scatter plot** and the bar plot showing the distribution of cosine similarity.
+- Finally, we will engage in a critical discussion of the findings generated through word embedding techniques, focusing on how these results align with established family theories and considering potential sources of bias in the analysis.
 
 ## Key Features and Results
 
+- **A Hands-on Experience to Work with Social Media Data**
 
+::: {.column width="75%"}
+![](image/dataset_example.png)
+:::
+
+- **Intuitive and Practical Concepts**
+
+::: {.column width="60%"}
+![](image/cosine.similarity_example.png)
+:::
+
+- **Methodology Based on Published Research**
+<div style="font-size: 80%;">
+Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South.<https://doi.org/10.1016/j.poetic.2021.101539> 
+</div>
+
+::: {.columns}
+
+::: {.column width="50%"}
+![](image/laura_cos_similarity_example.png)
+:::
+
+::: {.column width="50%"}
+![](image/laura_intersectionality_example.png)
+:::
+
+:::
+
+- **Highly Visualized Result Presentations**
 
 
 ## Notebook 3: Audio Analysis
 
+<div style="font-size: 120%;">
+**Learning Outcomes**: 
+</div>
+
+## Class Structure
+
+## Key Features and Results
+
 
 ## Notebook 4: Social Network Analysis of Family Law Cases
 
+<div style="font-size: 120%;">
+**Learning Outcomes**: 
+</div>
+
+## Class Structure
+
+## Key Features and Results
 
 ## Reference
 - Coleman, C., Lyon, S., & Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <https://datascience.quantecon.org/>
+- Greg Yauney and The AI for Humanists team. Zero-Shot Prompting with LLMs. Retrieved May 29, 2025, from <https://colab.research.google.com/drive/1QIG-3bIo1BHVWWlS22-1XItlZRrGSMNe>
 - Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South. Poetics, 88, 101539. <https://doi.org/10.1016/j.poetic.2021.101539> 
