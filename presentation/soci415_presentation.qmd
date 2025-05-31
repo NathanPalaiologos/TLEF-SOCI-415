@@ -18,21 +18,21 @@ fontsize: 220%
 
 ## Notebook 1: Text Classification and Zero-shot Classification [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
 
-<div style="font-size: 120%;">
-**Learning Outcomes**: Through this class, students will
-</div>
 
-- understand the how we can text data are vectorized for qualitative analysis with programs.
-- understand what is a classifier, how does it work, and how it can be applied to sociological studies.
-- classify texts in a classical approach that requires training data.
-- apply a theory they've learnt in the course to let a LLM label texts for them, without fitting training data.
-- critically evaluate the quality of classification, and analyze the pros and cons of using LLM in sociological studies.
+**Learning Outcomes**: Through this class, students will
+
+- understand how to vectorize text data for **qualitative analysis**.
+- understand what **classifiers** are, how they work, and how to apply them to sociological research.
+- apply classical methods to classify text, which requires labeled training data.
+- apply the theories learned in the course to have **large language models (LLMs)** annotate text without fitting training data.
+- critically evaluate classification quality and analyze the advantages and disadvantages of using large language models (LLMs) in sociological research.
+
 
 ## Class Structure
 
 ### Part A: Intro to Vectorization and Classification
 
-- In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.
+- **Dataset:** In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.
 - We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of **train-test split**, which helps us evaluate how well our classifier generalizes to new, unseen data.
 - Lastly, we cover how do we evaluate the quality of prediction using **accuracy** and how we can visualize the result using a **confusion matrix**. This provides students with a basic insight of machine learning.
 
@@ -40,9 +40,9 @@ fontsize: 220%
 
 ### Part B: Intro to Zero-shot Classification with LLM
 
-- In this part, we will use the same dataset as the previous part and a **pre-trained LLM** to perform classification. 
+- **Dataset:** In this part, we will use the same dataset as the previous part and a **pre-trained LLM** to perform classification. 
 - We will provide a prompt template let students apply knowledge to generate their own prompts and make classifications.
-- We will also show that, provided with a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.
+- We will also show that, given a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.
 - Lastly, we will evaluate the quality of predictions, explain the importance of **prompting** in **zero-shot classification** and discuss the pros and cons of using pre-trained LLM.
 
 ## Key Features and Results
@@ -89,19 +89,18 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 ## Notebook 2: Word Embeddings and Cosine Similarity
 
-<div style="font-size: 120%;">
 **Learning Outcomes**: Through this class, students will
-</div>
 
-- explore theories interactively using social media data as an example based on the methodology in Nelson (2021)
-- understand the concept of word embeddings and cosine similarity of words.
-- understand how topics and keywords can be extracted from texts by programs and algorithms.
-- apply knowledge in conflict theory and feminist theory to name categories that reflect intersectionality within family.
-- interpret the analysis result and discuss its potential bias.
+
+- Using examples from social media data, explore theory interactively based on Nelson's (2021) methodology.
+- Understand the concept of **word embeddings** and cosine similarity between words.
+- Understand how programs and algorithms extract themes and keywords from text.
+- Apply knowledge of **conflict theory** and **feminist theory** to name categories that reflect **intersectionality** within families.
+- Interpret analysis results and discuss their potential biases.
 
 ## Class Structure
 
-- We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
+- **Dataset:** We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
 - Following the basic data exploration, we will introduce the concept of word embedding by training **Word2Vec embeddings** for different subgroups using `gensim` python library. Students can play around with keywords related to different theories in this part.
 - We then will introduce the concept of **cosine similarity**, and calculate the cosine similarity between each keyword (e.g. "care", "power", "labor", "authority", "patriarchy") and the group vectors we create in this form ("female" + "mother" + "20 - 29"). 
 - The results such as distribution of words with be displayed through a **PCA 2D scatter plot** and the bar plot showing the distribution of cosine similarity.
@@ -137,6 +136,10 @@ Nelson, L. K. (2021). Leveraging the alignment between machine learning and inte
 :::
 
 :::
+<div style="font-size: 60%;">
+Figures source: Laura(2021)
+</div>
+
 
 - **Highly Visualized Result Presentations**
 
