@@ -4,7 +4,8 @@ subtitle: "Critical Family and Kinship Studies through LLM, Text Embedding and S
 author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
 format: revealjs
 scrollable: true
-fontsize: 220%
+fontsize: 200%
+theme: serif
 ---
 ## Introduction
 
@@ -152,15 +153,48 @@ Nelson, L. K. (2021). Leveraging the alignment between machine learning and inte
 ## Key Features and Results
 
 
-## Notebook 4: Social Network Analysis of Family Law Cases
+## Notebook 4: Learning theories of family using social network analysis  
 
-<div style="font-size: 120%;">
+<div style="font-size: 100%;">
 **Learning Outcomes**: 
+
+- Understand how social network analyis can be used to compare and contrast various family structures and provide empirical evidence for key family theories discussed in the course.
+
+- Understand how family members can be organized into subsystems, and how those systems can pattern interdependence and higherarchy using degree centrality measures.
+
+- Explain how social roles shape interaction patterns within a family unit using community detection algorithms.
+
+- Understand how resources and power can move through gendered pathways in family networks, and how those pathways may reinforce patriarchal structures.
+
+- Evaluate and examine key differences in family dynamics between datasets belonging to two very different time periods and cultural origins.
 </div>
 
-## Class Structure
+## Key Features 
 
-## Key Features and Results
+<div style="font-size: 100%;">
+
+Our aim is not just to demonstrate how to use social network analysis in sociological research, but give visual, empirical justifications to various topics in the course (we focus on feminist theory, symbolic interactionalism, and family systems theory). We accomplish this by analyzing two distinct datasets:
+
+- KINMATRIX, a massive ego-centric family network survey from 10 countries around the world (Nordic, Western, Central/Eastern, Southern Europe and the USA), containing information of 12’438 individuals worldwide with 250’000+ ties between them, collected recently (between 2022 and 2023).
+
+- The China Biographical Database, a massive prosopographical dataset of around 640,000 chinese individuals whose lived during middle-period China (1600-1200 AC). Used for the study of chinese history, the dataset contains coded kinship links as well as non-kin social connections.
+</div>
+
+## Class structure
+
+<div style="font-size: 80%;">
+
+Using a jupyter notebook, we will:
+
+- Use various social network analysis methods to compare and contrast family structures between the modern-day western world and middle-period China.
+
+- Use centrality measures to study how family members are organized into subsystems, and how those subsystems contain orderings of authority/influence. By comparing highly centralized historical lineages like Chinese imperial clans to present-day western extended families, we can contrast how authority flows through the networks. For instance, we can hypothesize that elite clan heads have high levels of eigenvector centrality, indicating concentrated power. 
+
+- Use community detection algorithms to partition kin ties into communities. Hypothetically, in the CBDB datset, we would see large clusters that correspond to clans/imperial lineages. Conversely, in the KINMATRIX dataset, we would see significantly smaller communities representing nuclear family clusters.
+
+- Indentify how power can flow through family networks differently between gendered pathways, by identifying brokerage positions (such as marriage bridges) using betweeness centrality. One could hypothesize that in the CBDB dataset, nodes flagged as female would occupy less bridges between major clans.
+
+</div>
 
 ## Reference
 - Coleman, C., Lyon, S., & Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <https://datascience.quantecon.org/>
