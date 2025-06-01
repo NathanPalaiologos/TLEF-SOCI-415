@@ -4,7 +4,8 @@ subtitle: "Project Name"
 author: "John Smith"
 format: revealjs
 scrollable: true
-fontsize: 220%
+fontsize: 200%
+theme: serif
 ---
 
 ## Introduction
