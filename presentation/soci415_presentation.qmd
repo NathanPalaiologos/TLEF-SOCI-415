@@ -170,7 +170,7 @@ Figures source: Laura(2021)
 
 ## Key Features and Results
 
-Work has been done with LENA recording devices attached to children. This will give students a sense of how such data is analyzed.
+Research literature has explored using LENA recording devices attached to children. This will give students a sense of how such data is analyzed.
 
 :::{.columns}
 ::: {.column width="75%"}
