@@ -2,10 +2,13 @@
 title: "SOCI 415"
 subtitle: "Critical Family and Kinship Studies through LLM, Text Embedding and Social Network Analysis"
 author: "Kaiyan Zhang, Yash Mali, Irene Berezin"
-format: revealjs
-scrollable: true
-fontsize: 200%
-theme: serif
+format:
+  revealjs:
+    scrollable: true
+    fontsize: 200%
+    theme: serif
+    pdf-export: true
+
 ---
 ## Introduction
 
@@ -173,8 +176,8 @@ Figures source: Laura(2021)
 Research literature has explored using LENA recording devices attached to children. This will give students a sense of how such data is analyzed.
 
 :::{.columns}
-::: {.column width="75%"}
-![](image/audio1.png)
+::: {.column width="99%"}
+![](image/audio3.png)
 :::
 :::
 
