@@ -87,7 +87,7 @@ Students get to apply their knowledge to design and try out their own prompt bas
 <div style="font-size: 80%;">
 A number of sociology papers employed text classification as their key methodology, for example:
 
-Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. <https://arxiv.org/abs/1608.08868>
+&nbsp;&nbsp;&nbsp;&nbsp; Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social Media: A Case Study of African-American English. ArXiv. <https://arxiv.org/abs/1608.08868>
 </div>
 
 
@@ -97,7 +97,7 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 
 
 - Using examples from social media data, explore theory interactively based on Nelson's (2021) methodology.
-- Understand the concept of **word embeddings** and cosine similarity between words.
+- Understand the concept of **word embeddings** and **cosine similarity** between words.
 - Understand how programs and algorithms extract themes and keywords from text.
 - Apply knowledge of **conflict theory** and **feminist theory** to name categories that reflect **intersectionality** within families.
 - Interpret analysis results and discuss their potential biases.
@@ -150,14 +150,13 @@ Figures source: Laura(2021)
 
 ## Notebook 3: Audio Analysis
 
-<div style="font-size: 120%;">
 **Learning Outcomes**: Through this class, students will
-</div>
 
-- Use machine learning to analyze audio data focussed on family dynamics and child development.
+
+- Use machine learning to analyze audio data focussed on **family dynamics** and **child development**.
 - Understand that non numerical data (like audio or text) can be transformed into numerical data for analysis.
 - Understand that audio data can be embedded into a vector space where similarity can be measured (eg. an audio recording of a child saying "I love you" is close to a recording of a child saying "I like you").
-- Use audio embeddings to classify audio data into "adult" and "child" voices.
+- Use **audio embeddings** to classify audio data into "adult" and "child" voices.
 - We can take it a step further use audio recordings and get word counts, sentiment ("happy", "sad", "angry") and other features from the audio data.
 - Audio analysis has been used in sociological research to predict socioeconomic status, child development, and family dynamics.
 
@@ -166,14 +165,14 @@ Figures source: Laura(2021)
 
 - **Dataset:** Depending on what we want to proceed with, we can easily get adult, child and infant audio datasets.
 - Explain that any data can be embedded (as vectors) to do further analysis.
-- Use Audio Spectrogram Transformer models to get audio embeddings for the audio data.
+- Use **Audio Spectrogram Transformer models** to get audio embeddings for the audio data.
 - Use the embeddings to classify audio data into categories like "adult" and "child" voices using simple linear models.
 - The same concepts of PCA and cosine similarity can be applied to audio embeddings.
-- OpenAI's Whisper is a speech to text model. We can also do that for various analysis tasks like word counts.
+- **OpenAI's Whisper** is a speech to text model. We can also do that for various analysis tasks like word counts.
 
 ## Key Features and Results
 
-Research literature has explored using LENA recording devices attached to children. This will give students a sense of how such data is analyzed.
+Research literature has explored using **LENA** recording devices attached to children. This will give students a sense of how such data is analyzed.
 
 :::{.columns}
 ::: {.column width="99%"}
@@ -187,11 +186,11 @@ Research literature has explored using LENA recording devices attached to childr
 <div style="font-size: 100%;">
 **Learning Outcomes**: 
 
-- Understand how social network analyis can be used to compare and contrast various family structures and provide empirical evidence for key family theories discussed in the course.
+- Understand how **social network analyis (SNA)** can be used to compare and contrast various family structures and provide empirical evidence for key family theories discussed in the course.
 
-- Understand how family members can be organized into subsystems, and how those systems can pattern interdependence and higherarchy using degree centrality measures.
+- Understand how family members can be organized into subsystems, and how those systems can pattern interdependence and hierarchy using **degree centrality measures**.
 
-- Explain how social roles shape interaction patterns within a family unit using community detection algorithms.
+- Explain how social roles shape interaction patterns within a family unit using **community detection algorithms**.
 
 - Understand how resources and power can move through gendered pathways in family networks, and how those pathways may reinforce patriarchal structures.
 
@@ -202,11 +201,11 @@ Research literature has explored using LENA recording devices attached to childr
 
 <div style="font-size: 100%;">
 
-Our aim is not just to demonstrate how to use social network analysis in sociological research, but give visual, empirical justifications to various topics in the course (we focus on feminist theory, symbolic interactionalism, and family systems theory). We accomplish this by analyzing two distinct datasets:
+Our aim is not just to demonstrate how to use social network analysis in sociological research, but give visual, empirical justifications to various topics in the course (we focus on **feminist theory, symbolic interactionalism, and family systems theory**). We accomplish this by analyzing two distinct datasets:
 
-- KINMATRIX, a massive ego-centric family network survey from 10 countries around the world (Nordic, Western, Central/Eastern, Southern Europe and the USA), containing information of 12’438 individuals worldwide with 250’000+ ties between them, collected recently (between 2022 and 2023).
+- ***KINMATRIX***, a massive ego-centric family network survey from 10 countries around the world (Nordic, Western, Central/Eastern, Southern Europe and the USA), containing information of 12’438 individuals worldwide with 250’000+ ties between them, collected recently (between 2022 and 2023).
 
-- The China Biographical Database, a massive prosopographical dataset of around 640,000 chinese individuals whose lived during middle-period China (1600-1200 AC). Used for the study of chinese history, the dataset contains coded kinship links as well as non-kin social connections.
+- ***The China Biographical Database***, a massive prosopographical dataset of around 640,000 chinese individuals whose lived during middle-period China (1600-1200 AC). Used for the study of chinese history, the dataset contains coded kinship links as well as non-kin social connections.
 </div>
 
 ## Class structure
@@ -217,11 +216,11 @@ Using a jupyter notebook, we will:
 
 - Use various social network analysis methods to compare and contrast family structures between the modern-day western world and middle-period China.
 
-- Use centrality measures to study how family members are organized into subsystems, and how those subsystems contain orderings of authority/influence. By comparing highly centralized historical lineages like Chinese imperial clans to present-day western extended families, we can contrast how authority flows through the networks. For instance, we can hypothesize that elite clan heads have high levels of eigenvector centrality, indicating concentrated power. 
+- Use **centrality measures** to study how family members are organized into subsystems, and how those subsystems contain orderings of authority/influence. By comparing highly centralized historical lineages like Chinese imperial clans to present-day western extended families, we can contrast how authority flows through the networks. For instance, we can hypothesize that elite clan heads have high levels of eigenvector centrality, indicating concentrated power. 
 
 - Use community detection algorithms to partition kin ties into communities. Hypothetically, in the CBDB datset, we would see large clusters that correspond to clans/imperial lineages. Conversely, in the KINMATRIX dataset, we would see significantly smaller communities representing nuclear family clusters.
 
-- Indentify how power can flow through family networks differently between gendered pathways, by identifying brokerage positions (such as marriage bridges) using betweeness centrality. One could hypothesize that in the CBDB dataset, nodes flagged as female would occupy less bridges between major clans.
+- Identify how power can flow through family networks differently between gendered pathways, by identifying brokerage positions (such as marriage bridges) using **betweeness centrality**. One could hypothesize that in the CBDB dataset, nodes flagged as female would occupy less bridges between major clans.
 
 <!-- </div> -->
 
