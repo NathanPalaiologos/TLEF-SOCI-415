@@ -6,8 +6,8 @@
 <script src="soci415_presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="soci415_presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="soci415_presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="soci415_presentation_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="soci415_presentation_files/libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.31">
 
   <meta name="author" content="Kaiyan Zhang, Yash Mali, Irene Berezin">
   <title>SOCI 415</title>
@@ -150,11 +150,11 @@ Kaiyan Zhang, Yash Mali, Irene Berezin
 <h2>Notebook 1: Text Classification and Zero-shot Classification <a href="https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb">Demo</a></h2>
 <p><strong>Learning Outcomes</strong>: Through this class, students will</p>
 <ul>
-<li>understand how to vectorize text data for <strong>qualitative analysis</strong>.</li>
-<li>understand what <strong>classifiers</strong> are, how they work, and how to apply them to sociological research.</li>
-<li>apply classical methods to classify text, which requires labeled training data.</li>
-<li>apply the theories learned in the course to have <strong>large language models (LLMs)</strong> annotate text without fitting training data.</li>
-<li>critically evaluate classification quality and analyze the advantages and disadvantages of using large language models (LLMs) in sociological research.</li>
+<li>Understand how to vectorize text data for <strong>qualitative analysis</strong>.</li>
+<li>Understand what <strong>classifiers</strong> are, how they work, and how to apply them to sociological research.</li>
+<li>Apply classical methods to classify text, which requires labeled training data.</li>
+<li>Apply the theories learned in the course to have <strong>large language models (LLMs)</strong> annotate text without fitting training data.</li>
+<li>Critically evaluate classification quality and analyze the advantages and disadvantages of using large language models (LLMs) in sociological research.</li>
 </ul>
 </section>
 <section id="class-structure" class="slide level2">
@@ -162,7 +162,7 @@ Kaiyan Zhang, Yash Mali, Irene Berezin
 <h3 id="part-a-intro-to-vectorization-and-classification">Part A: Intro to Vectorization and Classification</h3>
 <ul>
 <li><strong>Dataset:</strong> In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.</li>
-<li>We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of <strong>train-test split</strong>, which helps us evaluate how well our classifier generalizes to new, unseen data.</li>
+<li>We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of <strong>the golden rule</strong> in machine learning, which helps us evaluate how well our classifier generalizes to new, unseen data.</li>
 <li>Lastly, we cover how do we evaluate the quality of prediction using <strong>accuracy</strong> and how we can visualize the result using a <strong>confusion matrix</strong>. This provides students with a basic insight of machine learning.</li>
 </ul>
 </section>
@@ -173,7 +173,7 @@ Kaiyan Zhang, Yash Mali, Irene Berezin
 <li><strong>Dataset:</strong> In this part, we will use the same dataset as the previous part and a <strong>pre-trained LLM</strong> to perform classification.</li>
 <li>We will provide a prompt template let students apply knowledge to generate their own prompts and make classifications.</li>
 <li>We will also show that, given a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.</li>
-<li>Lastly, we will evaluate the quality of predictions, explain the importance of <strong>prompting</strong> in <strong>zero-shot classification</strong> and discuss the pros and cons of using pre-trained LLM.</li>
+<li>Lastly, we will evaluate the quality of predictions, explain the importance of <strong>prompting/in-context learning</strong> in <strong>zero-shot classification</strong> and discuss the pros and cons of using pre-trained LLM.</li>
 </ul>
 </section>
 <section id="key-features-and-results" class="slide level2">
@@ -227,7 +227,7 @@ Answer: </code></pre>
 <li><strong>Dataset:</strong> We will provide students with a cleaned text dataset containing reddit posts from <a href="https://www.reddit.com/r/family/">r/family</a> and <a href="https://www.reddit.com/r/FamilyIssues/">r/FamilyIssues</a>.</li>
 <li>Following the basic data exploration, we will introduce the concept of word embedding by training <strong>Word2Vec embeddings</strong> for different subgroups using <code>gensim</code> python library. Students can play around with keywords related to different theories in this part.</li>
 <li>We then will introduce the concept of <strong>cosine similarity</strong>, and calculate the cosine similarity between each keyword (e.g.&nbsp;“care”, “power”, “labor”, “authority”, “patriarchy”) and the group vectors we create in this form (“female” + “mother” + “20 - 29”).</li>
-<li>The results such as distribution of words with be displayed through a <strong>PCA 2D scatter plot</strong> and the bar plot showing the distribution of cosine similarity.</li>
+<li>The results such as distribution of words with be displayed through a <strong>Principal Component Analysis (PCA) 2D scatter plot</strong> and the bar plot showing the distribution of cosine similarity.</li>
 <li>Finally, we will engage in a critical discussion of the findings generated through word embedding techniques, focusing on how these results align with established family theories and considering potential sources of bias in the analysis.</li>
 </ul>
 </section>
@@ -265,14 +265,35 @@ Answer: </code></pre>
 <section id="notebook-3-audio-analysis" class="slide level2">
 <h2>Notebook 3: Audio Analysis</h2>
 <div style="font-size: 120%;">
-<p><strong>Learning Outcomes</strong>:</p>
+<p><strong>Learning Outcomes</strong>: Through this class, students will</p>
 </div>
+<ul>
+<li>Use machine learning to analyze audio data focussed on family dynamics and child development.</li>
+<li>Understand that non numerical data (like audio or text) can be transformed into numerical data for analysis.</li>
+<li>Understand that audio data can be embedded into a vector space where similarity can be measured (eg. an audio recording of a child saying “I love you” is close to a recording of a child saying “I like you”).</li>
+<li>Use audio embeddings to classify audio data into “adult” and “child” voices.</li>
+<li>We can take it a step further use audio recordings and get word counts, sentiment (“happy”, “sad”, “angry”) and other features from the audio data.</li>
+<li>Audio analysis has been used in sociological research to predict socioeconomic status, child development, and family dynamics.</li>
+</ul>
 </section>
 <section id="class-structure-2" class="slide level2">
 <h2>Class Structure</h2>
+<ul>
+<li><strong>Dataset:</strong> Depending on what we want to proceed with, we can easily get adult, child and infant audio datasets.</li>
+<li>Explain that any data can be embedded (as vectors) to do further analysis.</li>
+<li>Use Audio Spectrogram Transformer models to get audio embeddings for the audio data.</li>
+<li>Use the embeddings to classify audio data into categories like “adult” and “child” voices using simple linear models.</li>
+<li>The same concepts of PCA and cosine similarity can be applied to audio embeddings.</li>
+<li>OpenAI’s Whisper is a speech to text model. We can also do that for various analysis tasks like word counts.</li>
+</ul>
 </section>
 <section id="key-features-and-results-2" class="slide level2">
 <h2>Key Features and Results</h2>
+<p>Work has been done with LENA recording devices attached to children. This will give students a sense of how such data is analyzed.</p>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p><img data-src="image/audio1.png"></p>
+</div></div>
 </section>
 <section id="notebook-4-learning-theories-of-family-using-social-network-analysis" class="slide level2">
 <h2>Notebook 4: Learning theories of family using social network analysis</h2>
@@ -315,6 +336,7 @@ Answer: </code></pre>
 <li>Coleman, C., Lyon, S., &amp; Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <a href="https://datascience.quantecon.org/" class="uri">https://datascience.quantecon.org/</a></li>
 <li>Greg Yauney and The AI for Humanists team. Zero-Shot Prompting with LLMs. Retrieved May 29, 2025, from <a href="https://colab.research.google.com/drive/1QIG-3bIo1BHVWWlS22-1XItlZRrGSMNe" class="uri">https://colab.research.google.com/drive/1QIG-3bIo1BHVWWlS22-1XItlZRrGSMNe</a></li>
 <li>Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South. Poetics, 88, 101539. <a href="https://doi.org/10.1016/j.poetic.2021.101539" class="uri">https://doi.org/10.1016/j.poetic.2021.101539</a></li>
+<li>Rowe, M. L., Pan, B. A., Ayoub, C., &amp; Tamis-LeMonda, C. S. (2021). Socioeconomic status correlates with measures of Language Environment Analysis (LENA) system: A meta-analysis. Journal of Child Language. <a href="https://www.cambridge.org/core/journals/journal-of-child-language/article/socioeconomic-status-correlates-with-measures-of-language-environment-analysis-lena-system-a-metaanalysis/11C5B4C4954EDEB11DD5A38501A366A0" class="uri">https://www.cambridge.org/core/journals/journal-of-child-language/article/socioeconomic-status-correlates-with-measures-of-language-environment-analysis-lena-system-a-metaanalysis/11C5B4C4954EDEB11DD5A38501A366A0</a></li>
 </ul>
 
 </section>
@@ -534,190 +556,172 @@ Answer: </code></pre>
       });
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
