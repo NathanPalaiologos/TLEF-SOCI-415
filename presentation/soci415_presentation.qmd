@@ -19,6 +19,12 @@ format:
 **Sociology has changed**. The era of narrative alone has given way to data-grounded discovery In the quest to understand inequality, networks, and collective behavior. And those who harness both numbers and nuance, redefine how we see society. **Sociology has changed**. When social phenomena are both seen and measured, the discipline is transformed.
 
 
+:::{.column width="100%"}
+
+![](image/computational_social_science_example.webp)
+:::
+
+
 
 ## Notebook 1: Text Classification and Zero-shot Classification [Demo](https://colab.research.google.com/github/NathanPalaiologos/TLEF-SOCI-415/blob/main/demo/SOCI415.ipynb)
 
@@ -40,7 +46,6 @@ format:
 - We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of **the golden rule** in machine learning, which helps us evaluate how well our classifier generalizes to new, unseen data.
 - Lastly, we cover how do we evaluate the quality of prediction using **accuracy** and how we can visualize the result using a **confusion matrix**. This provides students with a basic insight of machine learning.
 
----
 
 ### Part B: Intro to Zero-shot Classification with LLM
 
