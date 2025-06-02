@@ -22,11 +22,11 @@ theme: serif
 
 **Learning Outcomes**: Through this class, students will
 
-- understand how to vectorize text data for **qualitative analysis**.
-- understand what **classifiers** are, how they work, and how to apply them to sociological research.
-- apply classical methods to classify text, which requires labeled training data.
-- apply the theories learned in the course to have **large language models (LLMs)** annotate text without fitting training data.
-- critically evaluate classification quality and analyze the advantages and disadvantages of using large language models (LLMs) in sociological research.
+- Understand how to vectorize text data for **qualitative analysis**.
+- Understand what **classifiers** are, how they work, and how to apply them to sociological research.
+- Apply classical methods to classify text, which requires labeled training data.
+- Apply the theories learned in the course to have **large language models (LLMs)** annotate text without fitting training data.
+- Critically evaluate classification quality and analyze the advantages and disadvantages of using large language models (LLMs) in sociological research.
 
 
 ## Class Structure
@@ -34,7 +34,7 @@ theme: serif
 ### Part A: Intro to Vectorization and Classification
 
 - **Dataset:** In this part, we will use a labeled text dataset related to topics discussed in the course, vectorize it, and show with 2D visualization what text data look like in the eyes of a classifier.
-- We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of **train-test split**, which helps us evaluate how well our classifier generalizes to new, unseen data.
+- We will then train the model with a training set, and test the prediction quality with a test set. Here we introduce the concept of **the golden rule** in machine learning, which helps us evaluate how well our classifier generalizes to new, unseen data.
 - Lastly, we cover how do we evaluate the quality of prediction using **accuracy** and how we can visualize the result using a **confusion matrix**. This provides students with a basic insight of machine learning.
 
 ---
@@ -44,7 +44,7 @@ theme: serif
 - **Dataset:** In this part, we will use the same dataset as the previous part and a **pre-trained LLM** to perform classification. 
 - We will provide a prompt template let students apply knowledge to generate their own prompts and make classifications.
 - We will also show that, given a range of possible labels, students can use LLM to predict even beyond the labels in the original dataset.
-- Lastly, we will evaluate the quality of predictions, explain the importance of **prompting** in **zero-shot classification** and discuss the pros and cons of using pre-trained LLM.
+- Lastly, we will evaluate the quality of predictions, explain the importance of **prompting/in-context learning** in **zero-shot classification** and discuss the pros and cons of using pre-trained LLM.
 
 ## Key Features and Results
 <!---
@@ -104,7 +104,7 @@ Blodgett, S. L., & Green, L. (2016). Demographic Dialectal Variation in Social M
 - **Dataset:** We will provide students with a cleaned text dataset containing reddit posts from [r/family](https://www.reddit.com/r/family/) and [r/FamilyIssues](https://www.reddit.com/r/FamilyIssues/). 
 - Following the basic data exploration, we will introduce the concept of word embedding by training **Word2Vec embeddings** for different subgroups using `gensim` python library. Students can play around with keywords related to different theories in this part.
 - We then will introduce the concept of **cosine similarity**, and calculate the cosine similarity between each keyword (e.g. "care", "power", "labor", "authority", "patriarchy") and the group vectors we create in this form ("female" + "mother" + "20 - 29"). 
-- The results such as distribution of words with be displayed through a **PCA 2D scatter plot** and the bar plot showing the distribution of cosine similarity.
+- The results such as distribution of words with be displayed through a **Principal Component Analysis (PCA) 2D scatter plot** and the bar plot showing the distribution of cosine similarity.
 - Finally, we will engage in a critical discussion of the findings generated through word embedding techniques, focusing on how these results align with established family theories and considering potential sources of bias in the analysis.
 
 ## Key Features and Results
@@ -148,12 +148,35 @@ Figures source: Laura(2021)
 ## Notebook 3: Audio Analysis
 
 <div style="font-size: 120%;">
-**Learning Outcomes**: 
+**Learning Outcomes**: Through this class, students will
 </div>
+
+- Use machine learning to analyze audio data focussed on family dynamics and child development.
+- Understand that non numerical data (like audio or text) can be transformed into numerical data for analysis.
+- Understand that audio data can be embedded into a vector space where similarity can be measured (eg. an audio recording of a child saying "I love you" is close to a recording of a child saying "I like you").
+- Use audio embeddings to classify audio data into "adult" and "child" voices.
+- We can take it a step further use audio recordings and get word counts, sentiment ("happy", "sad", "angry") and other features from the audio data.
+- Audio analysis has been used in sociological research to predict socioeconomic status, child development, and family dynamics.
+
 
 ## Class Structure
 
+- **Dataset:** Depending on what we want to proceed with, we can easily get adult, child and infant audio datasets.
+- Explain that any data can be embedded (as vectors) to do further analysis.
+- Use Audio Spectrogram Transformer models to get audio embeddings for the audio data.
+- Use the embeddings to classify audio data into categories like "adult" and "child" voices using simple linear models.
+- The same concepts of PCA and cosine similarity can be applied to audio embeddings.
+- OpenAI's Whisper is a speech to text model. We can also do that for various analysis tasks like word counts.
+
 ## Key Features and Results
+
+Work has been done with LENA recording devices attached to children. This will give students a sense of how such data is analyzed.
+
+:::{.columns}
+::: {.column width="75%"}
+![](image/audio1.png)
+:::
+:::
 
 
 ## Notebook 4: Learning theories of family using social network analysis  
@@ -202,4 +225,5 @@ Using a jupyter notebook, we will:
 ## Reference
 - Coleman, C., Lyon, S., & Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <https://datascience.quantecon.org/>
 - Greg Yauney and The AI for Humanists team. Zero-Shot Prompting with LLMs. Retrieved May 29, 2025, from <https://colab.research.google.com/drive/1QIG-3bIo1BHVWWlS22-1XItlZRrGSMNe>
-- Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South. Poetics, 88, 101539. <https://doi.org/10.1016/j.poetic.2021.101539> 
+- Nelson, L. K. (2021). Leveraging the alignment between machine learning and intersectionality: Using word embeddings to measure intersectional experiences of the nineteenth century U.S. South. Poetics, 88, 101539. <https://doi.org/10.1016/j.poetic.2021.101539>
+- Rowe, M. L., Pan, B. A., Ayoub, C., & Tamis-LeMonda, C. S. (2021). Socioeconomic status correlates with measures of Language Environment Analysis (LENA) system: A meta-analysis. Journal of Child Language. <https://www.cambridge.org/core/journals/journal-of-child-language/article/socioeconomic-status-correlates-with-measures-of-language-environment-analysis-lena-system-a-metaanalysis/11C5B4C4954EDEB11DD5A38501A366A0>
