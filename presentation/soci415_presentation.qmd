@@ -185,7 +185,7 @@ Our aim is not just to demonstrate how to use social network analysis in sociolo
 
 ## Class structure
 
-<div style="font-size: 80%;">
+<!-- <div style="font-size: 80%;"> -->
 
 Using a jupyter notebook, we will:
 
@@ -197,7 +197,7 @@ Using a jupyter notebook, we will:
 
 - Indentify how power can flow through family networks differently between gendered pathways, by identifying brokerage positions (such as marriage bridges) using betweeness centrality. One could hypothesize that in the CBDB dataset, nodes flagged as female would occupy less bridges between major clans.
 
-</div>
+<!-- </div> -->
 
 ## Reference
 - Coleman, C., Lyon, S., & Perla, J. (n.d.). Introduction to Economic Modeling and Data Science. <https://datascience.quantecon.org/>
